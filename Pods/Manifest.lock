@@ -1,0 +1,16 @@
+PODS:
+  - Phidget22Swift (1.0.39)
+
+DEPENDENCIES:
+  - Phidget22Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Phidget22Swift
+
+SPEC CHECKSUMS:
+  Phidget22Swift: 721c9aa49965860a4142820d948b19332c002a5f
+
+PODFILE CHECKSUM: 14473291a125c8a7e7e00b7fa92c1d2a9c5ef927
+
+COCOAPODS: 1.6.1

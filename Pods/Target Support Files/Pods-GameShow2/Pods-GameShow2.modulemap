@@ -1,0 +1,6 @@
+framework module Pods_GameShow2 {
+  umbrella header "Pods-GameShow2-umbrella.h"
+
+  export *
+  module * { export * }
+}

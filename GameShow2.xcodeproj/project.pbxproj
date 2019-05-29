@@ -12,9 +12,13 @@
 		269E537C228221B400952563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269E537A228221B400952563 /* Main.storyboard */; };
 		269E537E228221B500952563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269E537D228221B500952563 /* Assets.xcassets */; };
 		269E5381228221B500952563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269E537F228221B500952563 /* LaunchScreen.storyboard */; };
+		269E53892282233E00952563 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E53882282233E00952563 /* QuestionBank.swift */; };
+		269E538B2282235700952563 /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E538A2282235700952563 /* question.swift */; };
+		EE8281625FF18032E83BA572 /* Pods_GameShow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153407FDF622EA65E1DD7BA5 /* Pods_GameShow2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		153407FDF622EA65E1DD7BA5 /* Pods_GameShow2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameShow2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269E5373228221B400952563 /* GameShow2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameShow2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		269E5376228221B400952563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		269E5378228221B400952563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		269E537D228221B500952563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269E5380228221B500952563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269E5382228221B500952563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269E53882282233E00952563 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		269E538A2282235700952563 /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
+		A82EE47E26DC45F410F0B94B /* Pods-GameShow2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameShow2.debug.xcconfig"; path = "Target Support Files/Pods-GameShow2/Pods-GameShow2.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD4E14B19DF3A36A312283F /* Pods-GameShow2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameShow2.release.xcconfig"; path = "Target Support Files/Pods-GameShow2/Pods-GameShow2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8281625FF18032E83BA572 /* Pods_GameShow2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				269E5375228221B400952563 /* GameShow2 */,
 				269E5374228221B400952563 /* Products */,
+				6A4CB8E5D9893C463FC33352 /* Pods */,
+				C80B4DC083D6962A2EBCD163 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +68,30 @@
 				269E5376228221B400952563 /* AppDelegate.swift */,
 				269E5378228221B400952563 /* ViewController.swift */,
 				269E537A228221B400952563 /* Main.storyboard */,
+				269E538A2282235700952563 /* question.swift */,
+				269E53882282233E00952563 /* QuestionBank.swift */,
 				269E537D228221B500952563 /* Assets.xcassets */,
 				269E537F228221B500952563 /* LaunchScreen.storyboard */,
 				269E5382228221B500952563 /* Info.plist */,
 			);
 			path = GameShow2;
+			sourceTree = "<group>";
+		};
+		6A4CB8E5D9893C463FC33352 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A82EE47E26DC45F410F0B94B /* Pods-GameShow2.debug.xcconfig */,
+				EAD4E14B19DF3A36A312283F /* Pods-GameShow2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C80B4DC083D6962A2EBCD163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				153407FDF622EA65E1DD7BA5 /* Pods_GameShow2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269E5385228221B500952563 /* Build configuration list for PBXNativeTarget "GameShow2" */;
 			buildPhases = (
+				67EF5CACEAE595E10DEE4EFC /* [CP] Check Pods Manifest.lock */,
 				269E536F228221B400952563 /* Sources */,
 				269E5370228221B400952563 /* Frameworks */,
 				269E5371228221B400952563 /* Resources */,
+				A84E2F08AD0E29C28F783E31 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +162,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67EF5CACEAE595E10DEE4EFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameShow2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A84E2F08AD0E29C28F783E31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GameShow2/Pods-GameShow2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Phidget22Swift/Phidget22Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Phidget22Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GameShow2/Pods-GameShow2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		269E536F228221B400952563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				269E5379228221B400952563 /* ViewController.swift in Sources */,
+				269E538B2282235700952563 /* question.swift in Sources */,
 				269E5377228221B400952563 /* AppDelegate.swift in Sources */,
+				269E53892282233E00952563 /* QuestionBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +361,7 @@
 		};
 		269E5386228221B500952563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82EE47E26DC45F410F0B94B /* Pods-GameShow2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +379,7 @@
 		};
 		269E5387228221B500952563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD4E14B19DF3A36A312283F /* Pods-GameShow2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
