@@ -65,7 +65,7 @@ class ViewController: UIViewController {
                 
                 
                 buttonpressed = "green"
-                
+            
                 
                 readyPlayer1()
                 
